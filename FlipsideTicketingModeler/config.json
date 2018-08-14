@@ -1,0 +1,56 @@
+﻿{
+  "__comment_yearsToEvaluate__": "These are the only years that we will evaluate in this program.",
+  "yearsToEvaluate": [ "2014", "2015", "2016", "2017", "2018" ],
+
+  "__comment_tickets__": "This contains historical information about ticket caps throughout the years.",
+  "tickets": {
+
+    "__comment_defaultTicketMax__": "If a year is not specified in the ticketMaxByYear object below, the default value will be used instead.",
+    "defaultTicketMax": 2,
+
+    "__comment_ticketMaxByYear__": "If the ticket cap for a specific year differs from the default, it should be added to the object below.  Examples are shown.",
+    "ticketMaxByYear": {
+      "2017": 2,
+      "2018": 2
+    }
+  },
+
+  "__comment_projector__": "Contains the various scenarios that the future outcome projector will test when it runs.",
+  "projector": {
+
+    "__comment_lotteryTicketCap__": "The theoretical ticket cap that ought to be used to determine if there will be a lottery under the given scenarios.",
+    "lotteryTicketCount": 19,
+
+    "__comment_maximumExpectedPopulationGrowthPercentage__": "The highest percentage of population growth that we could possibly predict for these scenarios.",
+    "maximumExpectedPopulationGrowthPercentage": 20.0,
+
+    "__comment_scenarios__": "Each item in this list contains a single scenario that we will test.",
+    "scenarios": [
+      {
+        "name": "Raise ticket cap to 3",
+        "changeTicketMax": true,
+        "newTicketMax": 3
+      },
+      {
+        "name": "Raise ticket cap to 4",
+        "changeTicketMax": true,
+        "newTicketMax": 4
+      },
+      {
+        "name": "Raise ticket cap to 5",
+        "changeTicketMax": true,
+        "newTicketMax": 5
+      }
+    ]
+  },
+
+  "__comment_buyers__": "Contains information about how this application treats ticket buyers.",
+  "buyers": {
+
+    "__comment_aggregateAffluenceYearCount__": "If a buyer purchases a full order of tickets and sells all but one ticket this many times or more over the years, they are considered 'affluent'.",
+    "aggregateAffluenceYearCount": 3,
+
+    "__comment_consecutiveScalpingYearCount__": "If a buyer purchases a full order of tickets and sells them all this many years in our data set, they are considered a 'scalper'",
+    "aggregateScalpingYearCount": 3
+  }
+}
